@@ -64,7 +64,7 @@ int main(void)
     int *arr = (int *)malloc(size * sizeof(int));
     for (int i = 0, num = 0; i < size; i++)
     {
-        *(arr + i) = &num;
+        arr[i]  =  0;
     }
     generate(arr, 0, count);
     return 0;
